@@ -57,7 +57,7 @@ test("featured hackathon shows correct countdown", async ({ page }) => {
           "Deadline date exists and is visible in the submission section",
       },
       {
-        assertion: `The coundown badge shows the correct time remaining based on the current date (${Date.now()}) and the hackathon deadline within ~1 hour accuracy`,
+        assertion: `The coundown badge shows the correct time remaining based on the current date (${new Date()})}) and the hackathon deadline within ~1 hour accuracy`,
       },
     ],
 

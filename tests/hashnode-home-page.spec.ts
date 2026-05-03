@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import { runSteps } from "passmark";
 
 test("sidebar collapse mechanism", async ({ page }) => {
-  test.setTimeout(60_000); // increase timeout for AI execution
+  test.setTimeout(300_000); // increase timeout for AI execution
 
   await runSteps({
     page,
@@ -20,7 +20,7 @@ test("sidebar collapse mechanism", async ({ page }) => {
 });
 
 test("sidebar can expand", async ({ page }) => {
-  test.setTimeout(100_000); // increase timeout for AI execution
+  test.setTimeout(300_000); // increase timeout for AI execution
 
   await runSteps({
     page,
